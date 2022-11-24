@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#logo {
+  -webkit-text-decoration: double;
+          text-decoration: double;
+  color: rgb(167, 207, 107);
+  text-shadow: 1px 1px 2px yellow;
+  font-size: large;
+}
+
+.navbar {
+  background-color: #a1d1a8;
+  padding: 20px;
+}
+
+.offcanvas {
+  background-color: #9bdca5;
+}
+
+video {
+  width: 100%;
+  height: 150vh;
+  margin-top: 0%;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: white;
+  padding: 20px;
+  margin: 15px;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.main-del2 {
+  margin-top: 100px;
+}
+.main-del2 h2 {
+  margin-top: 60px;
+  padding-left: 30px;
+}
+.main-del2 p {
+  margin-top: 30px;
+  padding-left: 30px;
+}
+.main-del2 .bild {
+  width: 600px;
+  height: 400px;
+}
+
+.row img {
+  width: 360px;
+  height: 400px;
+}
+
+/* Tillval massage */
+.massage {
+  background: url(bilder/massageBild.webp);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+.massage h1 {
+  font: italic 1.2em "Fira Sans", serif;
+  text-align: center;
+  padding-top: 300px;
+  font-size: 80px;
+  color: whitesmoke;
+  text-shadow: 1px 1px 2px rgb(208, 241, 193);
+}
+
+.privatSpa {
+  background: url(bilder/partnerpool.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+.privatSpa h1 {
+  font: italic 1.2em "Fira Sans", serif;
+  text-align: center;
+  padding-top: 300px;
+  font-size: 80px;
+  color: whitesmoke;
+  text-shadow: 1px 1px 2px rgb(208, 241, 193);
+}
+
+.produkt {
+  background: url(bilder/bildprodukt.webp);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+.produkt h1 {
+  font: italic 1.2em "Fira Sans", serif;
+  text-align: center;
+  padding-top: 300px;
+  font-size: 80px;
+  color: whitesmoke;
+  text-shadow: 1px 1px 2px rgb(208, 241, 193);
+}
+
+.utepool {
+  background: url(bilder/utepool1.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+.utepool h1 {
+  font: italic 1.2em "Fira Sans", serif;
+  text-align: center;
+  padding-top: 300px;
+  font-size: 80px;
+  color: whitesmoke;
+  text-shadow: 1px 1px 2px rgb(208, 241, 193);
+}
+
+.text {
+  padding: 120px;
+  font-size: 20px;
+}
+.text h2 {
+  text-align: center;
+}
+
+.prisLista {
+  text-align: center;
+  font-size: large;
+}
+.prisLista ul {
+  list-style: none;
+}
+
+.produktGroup {
+  margin-top: auto;
+}
+.produktGroup .produktBild {
+  width: 490px;
+  height: 500px;
+}
+.produktGroup small {
+  font-size: 20px;
+}
+.produktGroup span {
+  font-size: 20px;
+  margin-left: 210px;
+  border: 1px solid gray;
+  padding: 5px;
+  background-color: rgb(197, 236, 197);
+}/*# sourceMappingURL=styleHem.css.map */
