@@ -14,6 +14,21 @@
 
 <body>
 
+    
+  <div class="navbar2">
+
+    <nav>
+    <img src="/Projektarbete-med-Zainab/Images/spa.jpeg" class="logo">
+    <ul>
+      <li><a href="Hem.html">HOME</a></li>
+      <li><a href="">OM OSS</a></li>
+      <li><a href="#main-1">TILLVAL</a></li>
+      <li><a href="omdöme.html">REFERENSER</a></li>
+      <li><a href=".">KONTAKT & ÖPPETTIDER</a></li>
+    </ul>
+  </nav>
+  
+
     <section class="utepool">
         <div>
             <h1>Njut av varm utomhuspool</h1>
@@ -45,6 +60,35 @@
     </div>
 
 
+    <footer class="footer-container">
+        <div class="footer-wrapper">
+            <div>
+                <img id="logo" src="/Projektarbete-med-Zainab/Images/spa.jpeg" alt="Företagslogo">
+            </div>
+            <div>
+                <h3>Sociala Medier</h3>
+                <a href="https://www.facebook.com/">Facebook</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://twitter.com/?lang=sv">Twitter</a>
+            </div>
+            <div>
+                <div><h3>Länkar</h3></div>
+                <a href="startsida.html">Startsida</a>    
+                <a href="omoss.html">Om oss</a>    
+                <a href="produktsida.html">Produktsida</a>    
+                <a href="referenser.html">Referenser</a>    
+                <a href="kontakt.html">Kontakt</a>    
+            </div>
+            <div>
+                <h3>Kontakt</h3>
+                <p>Hooks <br>
+                   Herrgård 56793 <br>
+                   +46(0)733-008342 <br>
+                   forinfohooks@gmail.com
+                </p>
+            </div>
+        </div>   
+     </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
@@ -53,3 +97,68 @@
 </body>
 
 </html>
+
+
+
+
+h1 {
+    font: italic 1.2em "Fira Sans", serif;
+    text-align: center;
+    font-size: 80px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px rgb(208, 241, 193);
+}
+
+
+@mixin prudokt-sidan-styleText {
+    padding: 20px;
+    font-size: 20px;
+
+    h2 {
+        text-align: center;
+    }
+
+
+}
+
+<nav class="navbar fixed-top">
+    <div class="container-fluid">
+      <span id="logo">Relaxing Spa</span><a class="navbar-brand" href="#">Relaxing
+        Spa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">OM OSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">TILLVAL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">REFERENSER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">KONTAKT & ÖPPETTIDER</a>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>

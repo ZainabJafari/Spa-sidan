@@ -15,71 +15,42 @@
 </head>
 
 <body>
-  <header class="header">
-    <section>
-      <nav class="navbar fixed-top">
-        <div class="container-fluid">
-          <span id="logo">Relaxing Spa</span><a class="navbar-brand" href="#">Relaxing
-            Spa</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
-            aria-controls="offcanvasDarkNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar"
-            aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">OM OSS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">TILLVAL</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">REFERENSER</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">KONTAKT & ÖPPETTIDER</a>
-                </li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-success" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </section>
 
+  <section>
+    <div class="navbar1">
+
+      <video autoplay loop muted plays-inline class="background-video">
+        <source src="pexels-pavel-danilyuk-6616372.mp4" type="video/mp4">
+      </video>
 
   </header>
 
-  <section class="baner">
+      <nav>
+        <img src="/Projektarbete-med-Zainab/Images/spa.jpeg" class="logo">
+        <ul>
+          <li><a href="Hem.html">HOME</a></li>
+          <li><a href="">OM OSS</a></li>
+          <li><a href="#main-1">TILLVAL</a></li>
+          <li><a href="omdöme.html">REFERENSER</a></li>
+          <li><a href=".">KONTAKT & ÖPPETTIDER</a></li>
+        </ul>
+      </nav>
 
-    <h1>Låt en känsla av lugn omfamna dig</h1>
-    <video autoplay loop muted>
-      <source src="production ID_4525107.mp4">
-    </video>
+      <div class="content">
+        <h1 class="title">Relaxing Spa</h1>
+      </div>
     </div>
   </section>
 
 
 
   <main>
-    <section class="main-1">
+    <section id="main-1">
       <div class="row row-cols-1 row-cols-md-4 mt- ">
         <div class="col">
           <div class="card">
-            <img src="bilder/massage1.webp" class="card-img-top" alt="...">
+            <a href="Massage.html" target="_blank"><img src="bilder/massage1.webp" class="card-img-top"
+                alt="Massage"></a>
             <div class="card-body">
               <h5 class="card-title">Massage</h5>
               <p class="card-text"> Vi är specialister inom muskler, leder och rörelse och jobbar med att få dig
@@ -90,7 +61,8 @@
         </div>
         <div class="col">
           <div class="card">
-            <img src="bilder/privatSpa.webp" class="card-img-top" alt="...">
+            <a href="privat.html" target="_blank"> <img src="bilder/privatSpa.webp" class="card-img-top"
+                alt="privatspa"></a>
             <div class="card-body">
               <h5 class="card-title">Privat spaupplevelse</h5>
               <p class="card-text">Liva upp vardagen med en mysig stund för dig och din partner. En oslagbar dejt som
@@ -100,7 +72,8 @@
         </div>
         <div class="col">
           <div class="card">
-            <img src="bilder/back.jpeg" class="card-img-top" alt="...">
+            <a href="produkter.html" target="_blank"><img src="bilder/back.jpeg" class="card-img-top"
+                alt="produkter"></a>
             <div class="card-body">
               <h5 class="card-title">Produkter</h5>
               <p class="card-text">Hos oss hittar du en härlig blandning av produkter som är vårdande för din hud och
@@ -111,7 +84,7 @@
         </div>
         <div class="col">
           <div class="card">
-            <img src="bilder/pool3.webp" class="card-img-top" alt="...">
+            <a href="utepool.html" target="_blank"><img src="bilder/pool3.webp" class="card-img-top" alt="pool"></a>
             <div class="card-body">
               <h5 class="card-title">Utomhuspool</h5>
               <p class="card-text">Koppla av i en utomhuspool efter en lång shoppingdag på stan eller stanna en hel
@@ -124,67 +97,85 @@
     </section>
 
 
-    <div class="main-del2">
-      <hr class="featurette-divider">
 
-      <div class="row featurette">
-        <div class="col-md-8 order-md-5">
-          <h2 class="featurette-heading fw-normal lh-1">VILA & AVKOPPLING</h2>
-          <p class="lead">Hos oss finner du flera sköna och rogivande oaser för vila och avkoppling. Varje rum har
-            fått
-            namn efter årstiderna. Följ din egen rytm och välj det som passar dig för stunden. Koppla av en stund i
-            vårt
-            ljusterapirum eller finn kraft och balans i det rogivande mörkerrummet.Det finns många varianter av
-            passager
-            av Lorem Ipsum tillgängliga, men majoriteten har drabbats av förändring i någon form, genom injicerad
-            humor
-            eller slumpmässiga ord som inte ser ens lite trovärdiga ut.</p>
+    <section>
+      <div class="main-del2">
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-8 order-md-5">
+            <h2 class="featurette-heading fw-normal lh-1">VILA & AVKOPPLING</h2>
+            <p class="lead">Hos oss finner du flera sköna och rogivande oaser för vila och avkoppling. Varje rum har
+              fått
+              namn efter årstiderna. Följ din egen rytm och välj det som passar dig för stunden. Koppla av en stund i
+              vårt
+              ljusterapirum eller finn kraft och balans i det rogivande mörkerrummet.Det finns många varianter av
+              passager
+              av Lorem Ipsum tillgängliga, men majoriteten har drabbats av förändring i någon form, genom injicerad
+              humor
+              eller slumpmässiga ord som inte ser ens lite trovärdiga ut.</p>
+          </div>
+          <div class="col-md-3 order-md-1">
+            <img src="bilder/vila.webp" alt="vila">
+          </div>
         </div>
-        <div class="col-md-3 order-md-1">
-          <img src="bilder/vila.webp" alt="vila">
+
+        <hr class="featurette-divider">
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">KVÄLLSPAKET MED MIDDAG & SPA</h2>
+            <p class="lead"> Vad sägs om att avsluta dagen med en helkväll. Ta med dina vänner på middag och avkoppling
+              på
+              spa i månens sken.snabbt och smidigt den middagsmeny i Stockholm som bäst faller dig i smaken. Boka
+              kvällens
+              middag i Stockholm eller låt dig först inspireras av andras middagsupplevelser. Med vår långa erfarenhet
+              kan
+              vi lova att du hittar den middagsmeny i Stockholm som passar just dig.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="bild" src="bilder/dinner.webp" alt="">
+          </div>
         </div>
+
       </div>
-
-      <hr class="featurette-divider">
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">KVÄLLSPAKET MED MIDDAG & SPA</h2>
-          <p class="lead"> Vad sägs om att avsluta dagen med en helkväll. Ta med dina vänner på middag och avkoppling
-            på
-            spa i månens sken.snabbt och smidigt den middagsmeny i Stockholm som bäst faller dig i smaken. Boka
-            kvällens
-            middag i Stockholm eller låt dig först inspireras av andras middagsupplevelser. Med vår långa erfarenhet
-            kan
-            vi lova att du hittar den middagsmeny i Stockholm som passar just dig.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="bild" src="bilder/dinner.webp" alt="">
-        </div>
-      </div>
-
-    </div>
+    </section>
 
   </main>
 
 
+  <!-- footer -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <footer class="footer-container">
+    <div class="footer-wrapper">
+      <div>
+        <img id="logo" src="/Projektarbete-med-Zainab/Images/spa.jpeg" alt="Företagslogo">
+      </div>
+      <div>
+        <h3>Sociala Medier</h3>
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://twitter.com/?lang=sv">Twitter</a>
+      </div>
+      <div>
+        <div>
+          <h3>Länkar</h3>
+        </div>
+        <a href="startsida.html">Startsida</a>
+        <a href="omoss.html">Om oss</a>
+        <a href="produktsida.html">Produktsida</a>
+        <a href="referenser.html">Referenser</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <p>Hooks <br>
+          Herrgård 56793 <br>
+          +46(0)733-008342 <br>
+          forinfohooks@gmail.com
+        </p>
+      </div>
+    </div>
+  </footer>
 
 
 
