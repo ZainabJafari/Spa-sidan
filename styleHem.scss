@@ -1,12 +1,5 @@
-
-
 @import "partials/mixins";
 @import "partials/variables";
-
-
-
-
-
 
 * {
     margin: 0;
@@ -16,10 +9,64 @@
 }
 
 
+@mixin footer($footerColor) {
+    background-color: #404040;
+}
+
+@mixin font {
+  font-family: 'Playfair Display', serif;
+
+}
+
+$borderColor: rgb(255, 0, 0);
+$footerColor: #404040;
+
+$mainColor: #A5F1E9;
+$secondColor: #7FE9DE;
+$thirdColor: #FFF6BF;
+$forthColor: #FFEBAD;
 
 
 
+$navbarColor: rgb(33, 217, 33);
 
+
+@mixin produkt-sidan-style($background) {
+
+    background: $background;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+
+
+    .tillvalH1 {
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 80px;
+        padding: 30px;
+        color: $footerColor;
+        text-shadow: 1px 1px 2px $thirdColor;
+        padding-top: 300px;
+        
+
+    }
+
+
+
+}
+
+
+
+@mixin prudokt-sidan-styleText {
+    padding: 120px;
+    font-size: 20px;
+
+    h2 {
+        text-align: center;
+    }
+
+
+}
 
 .navbar1 {
     width: 100%;
@@ -126,7 +173,7 @@ nav {
     }
 
     .bild2 {
-        width: 600px;
+        width: 400px;
         height: 300px;
     }
 }
@@ -307,6 +354,10 @@ nav {
 
 
 
+
+
+@import "partials/mixins";
+@import "partials/variables";
 
 * {
   box-sizing: border-box;
