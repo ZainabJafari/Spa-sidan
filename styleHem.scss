@@ -1,69 +1,30 @@
+
+
+@import "partials/mixins";
+@import "partials/variables";
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
-}
 
-
-@mixin footer($footerColor) {
-    background-color:#404040;
-}
-
-@mixin font($fontstyle) {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-
-
-$teacher: rgb(239, 18, 18);
-$background: #BBD4AF;
-$bigbox: rgb(0, 187, 255);
-$middlebox: pink;
-$smallbox: orange;
-$borderColor: rgb(255, 0, 0);
-$footerColor: #404040;
-
-
-
-$navbarColor: rgb(33, 217, 33) ;
-
-
-@mixin produkt-sidan-style($background) {
-
-    background: $background;
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
-
-    h1 {
-        font: italic 1.2em "Fira Sans", serif;
-
-        text-align: center;
-        padding-top: 300px;
-        font-size: 80px;
-        color: whitesmoke;
-        text-shadow: 1px 1px 2px rgb(208, 241, 193);
-    }
-
-
-
+    
 }
 
 
 
-@mixin prudokt-sidan-styleText {
-    padding: 120px;
-    font-size: 20px;
-
-    h2 {
-        text-align: center;
-    }
 
 
-}
 
-.navbar1{
+
+.navbar1 {
     width: 100%;
     height: 115vh;
-    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
     position: relative;
     padding: 0 5%;
     display: flex;
@@ -71,48 +32,57 @@ $navbarColor: rgb(33, 217, 33) ;
     justify-content: center;
 }
 
-nav{
+nav {
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    padding: 20px 8%;
+    padding: 15px 8%;
     display: flex;
-    justify-content: space-between ;
-
-    .logo{
+    justify-content: space-between;
+    background-color: $footerColor;
+    opacity: 0.8;
+    .logo {
         width: 80px;
 
     }
-    li{
+
+    .navbarLI {
         list-style: none;
         display: inline-block;
         margin-left: 100px;
     }
-    a{
+
+    .navbarA {
         text-decoration: none;
-        color: white;
-        font-size: 23px;
+        color: $forthColor;
+        font-size: 16px;
     }
 }
 
-.content{
+.content {
     text-align: center;
 
-    h1{
-        font-size: 40px;
-        color: rgb(97, 150, 211);
-        font-weight: 600 ;
+    .title {
+        font-size: 80px;
+        color: $forthColor;
+        font-weight: 600;
+        padding: 16px;
+        background-color: $footerColor;
+        opacity: 0.9;
+        border-radius: 20px;
     }
-    a{
+
+    .contentA{
         text-decoration: none;
         display: inline-block;
         color: whitesmoke;
-        font-size: 24px ;
+        font-size: 24px;
 
     }
 }
-.background-video{
+
+.background-video {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -122,73 +92,46 @@ nav{
 
 
 
+.logo {
+  height: 70px;
+  width: 80px;
+  border-radius: 100%;
 
-
-
-
-
-
-
-.navbar {
-    background-color: #a1d1a8;
-    padding: 20px;
 }
 
-
-.offcanvas {
-    background-color: #9bdca5;
+.row{
+    padding-top: 80px;
+    background-color: rgb(244, 237, 237);
 }
-
-
-video {
-    width: 100%;
-    height: 150vh;
-    margin-top: 0%;
-}
-
-   h1 {
-        text-align: center;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        background: white;
-        padding: 20px;
-        margin: 15px;
-        z-index: 1;
-        opacity: 0.7;
-    }
-
-
-
-
-
-
-
 
 
 
 .main-del2 {
-    margin-top: 100px;
+    margin-top: 80px;
 
-    h2 {
+    .featurette-heading {
         margin-top: 60px;
-        padding-left: 30px;
+        padding-left: 50px;
     }
 
-    p {
+    .lead {
         margin-top: 30px;
-        padding-left: 30px;
+        padding-left: 50px;
+        font-size: 16px;
     }
 
-    .bild {
-        width: 600px;
+    .bild1 {
+        width: 360px;
         height: 400px;
     }
+
+    .bild2 {
+        width: 600px;
+        height: 300px;
+    }
 }
 
 
-.row img {
-    width: 360px;
-    height: 400px;
-}
 
 
 
@@ -213,115 +156,450 @@ video {
     @include produkt-sidan-style(url(bilder/utepool1.jpeg));
 }
 
+.main-tillval{
+    background : linear-gradient(white, $thirdColor);
+}
 
-.text {
+.Information {
     padding: 120px;
     font-size: 20px;
 
-    h2 {
+    .InformationH2{
         text-align: center;
     }
 }
+
+
 
 .prisLista {
     text-align: center;
     font-size: large;
 
-    ul {
+    .prisListaUl {
         list-style: none;
     }
 
 }
 
-.boka{
 
-    padding: 20px;
-    width: 15px;
+.boka {
+    border: 1px solid rgb(212, 242, 246);
+    background-color: $mainColor;
+    padding: 20 20px;
+    width: 130px;
+    height: 50px;
+    border-radius: 20px;
+
     
 }
+
+
+
 
 .produktGroup {
     margin-top: auto;
 
     .produktBild {
-        width: 490px;
-        height: 500px;
+        width: 405px;
+        height: 400px;
     }
 
-    small {
-        font-size: 20px;
-    }
 
-    span {
-        font-size: 20px;
-        margin-left: 210px;
-        border: 1px solid gray;
-        padding: 5px;
-        background-color: rgb(197, 236, 197);
+    .produktSpan {
+        font-size: 16px;
+        margin-left: 170px;
+        padding: 3px;
+        background-color: $thirdColor;
     }
 }
 
 
-#logo {
-    height: 150px;
-    width: 150px;
-    border-radius: 100%;
-  
+
+.omdömeH2{
+  text-align: center;
+  padding-top: 80px;
 }
+
+.omdömeImg{
+  width: 100px;
+  height: 100px;
+}
+
+.omdömeSpan{
+  font-size: 30px;
+}
+
+
+
+.kund-recension {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+
+  .recension {
+      padding: 20px;
+      border: 1px solid gainsboro;
+      margin: 20px;
+      background-color: rgb(245, 248, 250);
+  }
+
+  img {
+      width: 110px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 //Footer
-.footer-container { 
+.footer-container {
     @include footer($footerColor);
     min-height: 350px;
     width: 100%;
     font-size: 15px;
-    
-} 
+
+}
 
 .footer-wrapper {
-    min-height:350px;
+    min-height: 350px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-   
+
 }
 
-.footer-wrapper > * {
+.footer-wrapper>* {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    color:rgb(254, 254, 254);
+    color: rgb(254, 254, 254);
     // @include font($fontstyle);
-    margin:30px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 
 
 
 
-.kund-recension{
-    border: 1px solid rgb(204, 184, 184);
-    padding: 100px;
-    display: flex;
-    flex-direction: column;
-    font-size: 22px;
 
-    .recension{
-        padding: 40px;
-        border: 1px solid gainsboro;
-        margin: 20px;
-        background-color: rgb(255, 246, 246);
-    }
-
-    img{
-        width: 110px;
-    }
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+//   font-family: "Montserrat", sans-serif;
+  // border: 3px solid red;
 }
 
+.body-omoss {
+  width: 100%;
+  height: 1700px;
+  background: url("Images/Screenshot\ 2022-11-29\ at\ 12.42.57.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 
+  // z-index: -1;
+}
+
+.copyright-div {
+  height: 300px;
+  margin-left: 200px;
+}
+
+.copyright-img {
+  display: flex;
+  align-self: flex-end;
+  justify-content: end;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+div.test {
+  width: 100%;
+  height: 100%;
+  background: aliceblue;
+  opacity: 0.8;
+}
+
+.image-container {
+  position: relative;
+  height: 350px;
+  width: 250px;
+}
+.höjd-bredd {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+}
+.höjd-bredd.test {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  position: absolute;
+  top: 5px;
+  left: 30px;
+  margin: 15px;
+}
+
+.image-container p {
+  position: absolute;
+  bottom: 20px;
+  top: 180px;
+}
+
+.h2-centrering {
+  margin: 5rem;
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+  font-size:x-large;
+}
+
+.topdiv {
+  display: flex;
+  flex-direction: row;
+  //   justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  margin: 4rem;
+  //    @include border($borderColor);
+}
+
+//Alla direkta children till Parent
+.topdiv > * {
+  text-align: center;
+  //   flex-grow: 1;
+  //   flex-shrink: 1;
+  max-width: 15rem;
+  //    @include border($borderColor);
+}
+
+.slogan {
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  align-items: center;
+}
+
+.bottomdiv {
+  display: flex;
+  flex-direction: row;
+  //   justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  margin: 4rem;
+
+  //    @include border($borderColor);
+}
+
+@media (max-width: 1250px) {
+  .bottomdiv {
+    justify-content: center;
+  }
+  .topdiv {
+    justify-content: center;
+  }
+}
+
+//Alla direkta children till Parent
+.bottomdiv > * {
+  text-align: center;
+  //   flex-grow: 1;
+  //   flex-shrink: 1;
+  max-width: 15rem;
+  //    @include border($borderColor);
+}
+
+//Historik
+.Historik-container {
+  display: flex;
+  // justify-content: center;
+  margin: 7rem;
+}
+
+.historik {
+  display: flex;
+  border: 4px solid black;
+  flex-direction: column;
+  max-width: 700px;
+  text-align: center;
+  background-color: ($forthColor);
+  padding: 2rem;
+}
+
+//Footer
+.footer-container {
+  @include footer($footerColor);
+  min-height: 350px;
+  width: 100%;
+  font-size: 15px;
+  margin-top: auto;
+}
+
+.footer-wrapper {
+  position: relative;
+  min-height: 350px;
+  min-width: 450px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-wrapper > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  flex-wrap: wrap;
+  color: rgb(254, 254, 254);
+  // @include font($fontstyle);
+  margin: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  text-align: center;
+}
+
+// div {
+//   border: 4px solid black;
+// }
+
+.footer-länkar {
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.footer-länkar:hover {
+  color: #2ecc71;
+}
+
+.h3-kontakt {
+  margin-bottom: 10px;
+}
+
+// p {
+//     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+
+// }
+
+//Form
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 100px;
+  margin-bottom: 250px;
+  margin-top: 100px;
+}
+
+.form-container:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1200px;
+  background: url("Images/beach.jpg");
+  background-size: cover;
+  z-index: -1;
+  filter: blur(1px);
+}
+
+.contact-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+}
+
+.left {
+  height: 100%;
+  background: url("Images/spaFormLjus.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.right {
+  // display: flex;
+  // flex-direction: column;
+  // margin: 20px;
+  padding: 25px 40px;
+}
+
+.kontakth2 {
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+  margin: 5rem;
+  // margin-bottom: 10px;
+}
+
+.kontakth2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 4px;
+  background-color: #2ecc71;
+}
+
+.field {
+  width: 100%;
+  padding: 1rem 1rem;
+  outline: none;
+  border: none;
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 0.3s;
+}
+
+.field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.field:focus {
+  background-color: #fff;
+  border: 2px solid rgba(30, 85, 250, 0.47);
+}
